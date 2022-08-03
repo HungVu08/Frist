@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgAnhMonAn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKhuyenMai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="KHUYEN MAI"
+        android:textStyle="bold"
+        android:textColor="#F16565"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgAnhMonAn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTenCuaHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Tiger Sugar Delivery - Ham Nghi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgAnhMonAn"
+        app:layout_constraintTop_toBottomOf="@+id/tvKhuyenMai" />
+
+    <ImageView
+        android:id="@+id/imgGiohang"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_storefront"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTenCuaHang"
+        app:layout_constraintTop_toBottomOf="@+id/tvKhuyenMai" />
+
+    <TextView
+        android:id="@+id/tvThoiGianVaKhoangCach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="20 phut * 1,4 km *"
+        android:textColor="#635555"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imgAnhMonAn"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenCuaHang" />
+
+    <ImageView
+        android:id="@+id/imgSaoDanhGia"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintStart_toEndOf="@+id/tvThoiGianVaKhoangCach"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenCuaHang" />
+
+    <TextView
+        android:id="@+id/tvLuotDanhGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4,5(1k+)"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imgSaoDanhGia"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenCuaHang" />
+
+    <TextView
+        android:id="@+id/tvTenMonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Tra Sua"
+        app:layout_constraintStart_toEndOf="@+id/imgAnhMonAn"
+        app:layout_constraintTop_toBottomOf="@+id/tvThoiGianVaKhoangCach" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#ECDADA"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAnhMonAn"
+        app:layout_constraintStart_toEndOf="@+id/imgAnhMonAn">
+
+        <TextView
+            android:id="@+id/tvMaGiamGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOSSQUAN25 khao2..."
+            android:textSize="14sp"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        app:cardCornerRadius="5dp"
+        android:backgroundTint="#ECDADA"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAnhMonAn"
+        app:layout_constraintStart_toEndOf="@+id/cardView4">
+        <TextView
+            android:id="@+id/tvMaGiamGiaKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giam 5kd phi giao hang "></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
